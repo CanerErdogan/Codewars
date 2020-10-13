@@ -10,6 +10,7 @@ values = {
 
 numbers = ['MCMXC', 'MMVIII', 'MDCLXVI']
 
+
 def solution(roman):
     decimal = 0
     for i in range(len(roman)-1):
@@ -19,4 +20,6 @@ def solution(roman):
             decimal -= value
     return decimal + values[roman[-1]]
 
-for n in numbers: print(solution(n))
+
+for n in numbers:
+    print(solution(n))
